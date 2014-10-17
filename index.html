@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+    <meta charset="utf-8">
+    <title>iOS Design Tips</title>
+    <link rel="stylesheet" href="css/fonts.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+</head>
+<body id="body" onload="showContent()">
+<div id="container" ng_controller="Controller">
+
+    <nav class="{{orientation}}" ng-click="$event.preventDefault()">
+        <a href="#" class="port" ng-click="orientation='port'">Portrait</a>
+        <a href="#" class="land" ng-click="orientation='land'">Landscape</a>
+    </nav>
+
+    <table id="output_table" cellpadding="0" cellspacing="0">
+        <thead>
+        <tr>
+            <td>Device</td>
+            <td>Image</td>
+            <td class="{{video?'with-video':''}}">Video</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="device in devices">
+
+            <td>
+                <div>{{device.display_name}}</div>
+            </td>
+
+            <td>
+                <div ng-show="orientation=='port' && statbar">{{device.port_bar}}</div>
+                <div ng-show="orientation=='port' && !statbar">{{device.port}}</div>
+                <div ng-show="orientation=='land' && statbar">{{device.land_bar}}</div>
+                <div ng-show="orientation=='land' && !statbar">{{device.land}}</div>
+            </td>
+
+            <td class="{{video?'with-video':''}}">
+                <div ng-show="orientation=='land'">{{device.land_vid}}</div>
+                <div ng-show="orientation=='port'">{{device.port_vid}}</div>
+            </td>
+
+        </tr>
+        </tbody>
+    </table>
+
+    <p>
+        <label><input type="checkbox" ng-model="statbar" class="checkbox"/>With status bar</label>&nbsp;&nbsp;&nbsp;
+        <label><input type="checkbox" ng-model="video" class="checkbox"/>I need a video</label>
+    </p>
+
+    <div class="spacer-10"></div>
+    <h2>Apple Tips</h2>
+    <ul>
+        <li>Apple recommends don’t use a screen with status bar. However that is not critical restriction.
+        <li>Up to 30 seconds of video showing app usage
+        <li>Focus on 2-3 of the best features
+        <li>Demonstrate UI, functionality or features
+        <li>It should mostly be captured footage
+        <li>Content must be rated 4+ (appropriate for all audience)
+        <li>Stick to straightforward transitions, nothing too fancy
+        <li>Localisation not required (or supported)
+        <li>Voiceover is allowed, try to make it not sound like an advert
+        <li>Identify all in-app purchases (e.g. «Requires in-app purchase» subtitle)
+        <li>Don’t use live action footage
+        <li>Don’t use logos or copyrighted material
+        <li>Don’t include any time based sales or special offers
+        <li>Maximum file size 500 MB (Max length 30 seconds. Min length 15 seconds)
+    </ul>
+    <h2>Screenshot tips</h2>
+    <ul>
+        <li>For screenshot : 72 dpi, RGB, flattened, no transparency, high-quality JPEG or PNG image file format
+        <li>Don't include the device status bar in your screenshots
+        <li>One screenshot is required. Up to four additional screenshots can be uploaded
+    </ul>
+
+</div>
+<script src="js/lib/angular-1.2.19.min.js"></script>
+<script src="js/lib/jquery-1.11.1.min.js"></script>
+<script src="js/Devices.js"></script>
+<script src="js/Controller.js"></script>
+<script>
+    $(document).ready(function () {
+        $("tr").click(function () {
+            $(this).toggleClass("selected");
+        });
+    })
+    //show content
+    function showContent() {
+        $('#body').animate({"opacity": 1}, "slow");
+    }
+
+</script>
+</body>
+</html>

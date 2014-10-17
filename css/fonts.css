@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'Helvetica Neue Regular'; /*a name to be used later*/
+    src: url('../fonts/helveticaneuecyr-roman.ttf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'Helvetica Neue Bold'; /*a name to be used later*/
+    src: url('../fonts/helveticaneuecyr-bold.ttf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'Helvetica Neue Light'; /*a name to be used later*/
+    src: url('../fonts/helveticaneuecyr-light.ttf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'Helvetica Neue Medium'; /*a name to be used later*/
+    src: url('../fonts/helveticaneuecyr-medium.ttf'); /*URL to font*/
+}
