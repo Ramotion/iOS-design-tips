@@ -1,6 +1,6 @@
 iOS-design-tips
 ===============
-Simple iOS design guidelines that will assist you in selecting the dimensions for your AppStore assets.
+Simple iOS design guidelines that will assist you in selecting the dimensions for your AppStore assets:
 http://ramotion.github.io/iOS-design-tips/
  
 ##About us
