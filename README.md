@@ -1,5 +1,6 @@
 iOS-design-tips
 ===============
+Simple iOS design guidelines that will assist you in selecting the dimensions for your Appstore assets.
 
 ##About us
 
