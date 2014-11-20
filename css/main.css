@@ -41,6 +41,13 @@ ul {
     line-height: 30pt;
 }
 
+.copyright {
+    text-align: left;
+    font-family: 'Helvetica Neue Light';
+    font-size: 12pt;
+    line-height: 30pt;
+}
+
 h2 {
     font-family: 'Helvetica Neue Light';
     font-size: 22pt;
@@ -49,6 +56,18 @@ h2 {
 
 div.spacer-10 {
     height: 10px;
+}
+
+div.spacer-30 {
+    height: 30px;
+}
+
+div.spacer-40 {
+    height: 40px;
+}
+
+div.spacer-60 {
+    height: 60px;
 }
 
 #container {
