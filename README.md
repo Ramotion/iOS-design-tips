@@ -5,6 +5,6 @@ http://ramotion.github.io/iOS-design-tips/
  
 ##About us
 
-[Ramotion](http://Ramotion.com) is an iPhone app design and development company. We are ready for new interesting iOS App Development projects.
+[Ramotion](http://ramotion.com?utm_source=gthb&utm_medium=special&utm_campaign=iOS-design-tips) is an iPhone app design and development company. We are ready for new interesting iOS App Development projects.
 
 Follow us on [twitter](http://twitter.com/ramotion).
